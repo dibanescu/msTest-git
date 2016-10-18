@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="ae0303c6-ff9c-4858-870c-47c919abf9c3">
+   <signature appVersion="3.1.2" lastUpdatedOn="18/10/2016 17:24:17 +0300"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/flat_file.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/flat_file.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="-1738215665" elementPath="/Root/Leaf2/">
+         <dmlExpression><![CDATA[in:\Root\Leaf2]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>
