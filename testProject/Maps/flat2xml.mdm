@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="1da3dc8e-1992-497f-bb52-8dfa54a50df5">
+   <signature appVersion="3.1.2" lastUpdatedOn="19/10/2016 14:39:46 +0300"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/xml.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/flat.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="-2143375678" elementPath="/Prolog/XmlVersion/">
+         <dmlExpression><![CDATA["1.0"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1094179905" elementPath="/Prolog/XmlEncoding/">
+         <dmlExpression><![CDATA["ISO-8859-1"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-687391434" elementPath="/Root/Leaf9/">
+         <dmlExpression><![CDATA[in:\Root\Leaf2]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>
