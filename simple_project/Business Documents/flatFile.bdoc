@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <businessDocument xmlns="http://www.axway.com/mappingServices/flatFileBusinessDocument" keepInputNumberFractionDigits="true" encodingBD="iso8859" keepDecimalSeparator="true" id="ba59a673-8495-4c95-b5fd-e8739bd96c02" keepDecimalSeparatorCharacter="true" keepInputNumberDateDigits="true">
-   <signature appVersion="3.1.2" lastUpdatedOn="19/10/2016 11:57:24 +0300"/>
+   <signature appVersion="3.1.2" lastUpdatedOn="19/10/2016 12:04:43 +0300"/>
    <childElements>
       <childElement factoryType="FlatFileParent" order="1" label="Root" name="Root" hash="174501371">
          <cardinality minimum="1" maximum="1"/>
@@ -9,12 +9,6 @@
                <cardinality minimum="1" maximum="1"/>
             </childElement>
             <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" paddingCharElement=" " name="Leaf3" paddingPosElement="1" order="3" keepDecimalSeparator="true" encodingElement="iso8859" hash="-196315871" allowDistortion="true">
-               <cardinality minimum="1" maximum="1"/>
-            </childElement>
-            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" paddingCharElement=" " name="Leaf4" paddingPosElement="1" order="4" keepDecimalSeparator="true" encodingElement="iso8859" hash="-653308757" allowDistortion="true">
-               <cardinality minimum="1" maximum="1"/>
-            </childElement>
-            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" paddingCharElement=" " name="Leaf5" paddingPosElement="1" order="5" keepDecimalSeparator="true" encodingElement="iso8859" hash="-549295411" allowDistortion="true">
                <cardinality minimum="1" maximum="1"/>
             </childElement>
          </childElements>
