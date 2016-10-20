@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/webServiceMap" messageSectionType="HEADER_AND_BODY" localWsdlPath="/ProjectWithWsdl/Maps/map_wsdl.wsdl" operation="getvalueadv" port="CursSoap12" wsdlUri="http://www.infovalutar.ro/curs.asmx?wsdl" id="1d9b2fbc-51a9-4dfb-92f6-a9699a912c6f">
+   <service localPart="Curs" namespaceUri="http://www.infovalutar.ro/"/>
+   <signature appVersion="3.1.2" lastUpdatedOn="20/10/2016 16:49:55 +0300"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/map_wsdl_out.bdoc" alias="Output"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/map_wsdl_in.bdoc" alias="In"/>
+   </inputBusinessDocuments>
+</map>
