@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="00a561eb-e6cb-4cc6-8e9e-670a34e5b134">
+   <signature appVersion="3.1.2" lastUpdatedOn="20/10/2016 15:58:54 +0300"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/edi.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/edi.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="-2024749091" elementPath="/MESSAGE/UNH/S016/D0116/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MESSAGE\UNH\S016\D0116, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="161881280" elementPath="/HEADER/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\HEADER then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="444746654" elementPath="/HEADER/UNG/S006/D0007/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\HEADER\UNG\S006\D0007, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-540870676" elementPath="/HEADER/UNG/S006/D0040/">
+         <dmlExpression><![CDATA[in:\HEADER\UNG\S006\D0040]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1101159362" elementPath="/MESSAGE/UNH/S017/D0121/">
+         <dmlExpression><![CDATA[in:\MESSAGE\UNH\S017\D0121]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-874420997" elementPath="/HEADER/UNG/S007/D0007/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\HEADER\UNG\S007\D0007, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1419107382" elementPath="/HEADER/UNB/S002/D0042/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\HEADER\UNB\S002\D0042, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-740851595" elementPath="/HEADER/UNB/S002/D0007/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\HEADER\UNB\S002\D0007, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-770432645" elementPath="/MESSAGE/UNH/D0068/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MESSAGE\UNH\D0068, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="317344897" elementPath="/HEADER/UNG/S007/D0044/">
+         <dmlExpression><![CDATA[in:\HEADER\UNG\S007\D0044]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1939440267" elementPath="/HEADER/UNB/S002/D0004/">
+         <dmlExpression><![CDATA[in:\HEADER\UNB\S002\D0004]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="480677791" elementPath="/HEADER/UNB/D0029/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\HEADER\UNB\D0029, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-646767059" elementPath="/MESSAGE/UNH/S017/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\MESSAGE\UNH\S017 then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1793193912" elementPath="/HEADER/UNG/S008/D0057/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\HEADER\UNG\S008\D0057, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="47888122" elementPath="/HEADER/UNA/X0004/">
+         <dmlExpression><![CDATA[in:\HEADER\UNA\X0004]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-123798583" elementPath="/HEADER/UNG/D0051/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\HEADER\UNG\D0051, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-833002899" elementPath="/MESSAGE/UNH/S018/D0127/">
+         <dmlExpression><![CDATA[in:\MESSAGE\UNH\S018\D0127]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="145675879" elementPath="/MESSAGE/UNH/S010/D0073/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MESSAGE\UNH\S010\D0073, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1199458050" elementPath="/MESSAGE/UNH/S016/D0118/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MESSAGE\UNH\S016\D0118, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1079818447" elementPath="/MESSAGE/UNH/S016/D0051/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MESSAGE\UNH\S016\D0051, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1284642769" elementPath="/HEADER/UNG/S004/D0017/">
+         <dmlExpression><![CDATA[in:\HEADER\UNG\S004\D0017]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1643692471" elementPath="/HEADER/UNG/S008/D0052/">
+         <dmlExpression><![CDATA[in:\HEADER\UNG\S008\D0052]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="19198958" elementPath="/HEADER/UNB/S001/D0001/">
+         <dmlExpression><![CDATA[in:\HEADER\UNB\S001\D0001]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2042744612" elementPath="/MESSAGE/UNH/S018/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\MESSAGE\UNH\S018 then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1356366211" elementPath="/HEADER/UNG/D0048/">
+         <dmlExpression><![CDATA[in:\HEADER\UNG\D0048]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-653875820" elementPath="/HEADER/UNB/S002/D0008/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\HEADER\UNB\S002\D0008, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1249214527" elementPath="/MESSAGE/UNH/S009/D0113/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MESSAGE\UNH\S009\D0113, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1737517667" elementPath="/HEADER/UNB/S004/D0019/">
+         <dmlExpression><![CDATA[in:\HEADER\UNB\S004\D0019]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="278049772" elementPath="/MESSAGE/UNH/S010/D0070/">
+         <dmlExpression><![CDATA[in:\MESSAGE\UNH\S010\D0070]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1233603645" elementPath="/MESSAGE/UNH/D0062/">
+         <dmlExpression><![CDATA[in:\MESSAGE\UNH\D0062]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-996852238" elementPath="/HEADER/UNB/S001/D0002/">
+         <dmlExpression><![CDATA[in:\HEADER\UNB\S001\D0002]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1467559326" elementPath="/HEADER/UNB/D0020/">
+         <dmlExpression><![CDATA[in:\HEADER\UNB\D0020]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1937774116" elementPath="/HEADER/UNB/S004/D0017/">
+         <dmlExpression><![CDATA[in:\HEADER\UNB\S004\D0017]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1836757305" elementPath="/HEADER/UNG/S007/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\HEADER\UNG\S007 then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-53298080" elementPath="/HEADER/UNA/X0006/">
+         <dmlExpression><![CDATA[in:\HEADER\UNA\X0006]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="289539231" elementPath="/HEADER/UNA/X0003/">
+         <dmlExpression><![CDATA[in:\HEADER\UNA\X0003]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-49234894" elementPath="/HEADER/UNB/S005/D0025/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\HEADER\UNB\S005\D0025, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="998767303" elementPath="/MESSAGE/UNH/S009/D0057/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MESSAGE\UNH\S009\D0057, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1360691309" elementPath="/MESSAGE/UNH/S017/D0124/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MESSAGE\UNH\S017\D0124, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1160735643" elementPath="/HEADER/UNB/D0035/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\HEADER\UNB\D0035, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1508703633" elementPath="/MESSAGE/UNH/S010/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\MESSAGE\UNH\S010 then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-223194827" elementPath="/HEADER/UNB/S003/D0010/">
+         <dmlExpression><![CDATA[in:\HEADER\UNB\S003\D0010]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1613866840" elementPath="/MESSAGE/UNH/S009/D0065/">
+         <dmlExpression><![CDATA[in:\MESSAGE\UNH\S009\D0065]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1362054886" elementPath="/HEADER/UNA/X0005/">
+         <dmlExpression><![CDATA[in:\HEADER\UNA\X0005]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="222624466" elementPath="/MESSAGE/UNH/S009/D0110/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MESSAGE\UNH\S009\D0110, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-865141990" elementPath="/MESSAGE/UNH/S009/D0054/">
+         <dmlExpression><![CDATA[in:\MESSAGE\UNH\S009\D0054]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1342289781" elementPath="/HEADER/UNA/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\HEADER\UNA then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-887841327" elementPath="/HEADER/UNB/S003/D0046/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\HEADER\UNB\S003\D0046, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="31367303" elementPath="/MESSAGE/UNH/S016/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\MESSAGE\UNH\S016 then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1816342693" elementPath="/MESSAGE/UNH/S009/D0052/">
+         <dmlExpression><![CDATA[in:\MESSAGE\UNH\S009\D0052]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1829293672" elementPath="/HEADER/UNB/D0031/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\HEADER\UNB\D0031, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="648396264" elementPath="/HEADER/UNG/D0058/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\HEADER\UNG\D0058, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1914387791" elementPath="/MESSAGE/UNH/S018/D0130/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MESSAGE\UNH\S018\D0130, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-457829149" elementPath="/MESSAGE/UNH/S018/D0128/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MESSAGE\UNH\S018\D0128, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1968191540" elementPath="/HEADER/UNG/S008/D0054/">
+         <dmlExpression><![CDATA[in:\HEADER\UNG\S008\D0054]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="394719649" elementPath="/HEADER/UNG/S004/D0019/">
+         <dmlExpression><![CDATA[in:\HEADER\UNG\S004\D0019]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1736581772" elementPath="/HEADER/UNG/S006/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\HEADER\UNG\S006 then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1477065187" elementPath="/HEADER/UNG/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\HEADER\UNG then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="501782982" elementPath="/MESSAGE/UNH/S009/D0051/">
+         <dmlExpression><![CDATA[in:\MESSAGE\UNH\S009\D0051]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-744226072" elementPath="/HEADER/UNB/S005/D0022/">
+         <dmlExpression><![CDATA[in:\HEADER\UNB\S005\D0022]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1137423284" elementPath="/HEADER/UNB/S001/D0080/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\HEADER\UNB\S001\D0080, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1701066782" elementPath="/HEADER/UNB/S001/D0133/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\HEADER\UNB\S001\D0133, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1266357747" elementPath="/HEADER/UNB/D0032/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\HEADER\UNB\D0032, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1004346030" elementPath="/HEADER/UNG/S004/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\HEADER\UNG\S004 then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-155718878" elementPath="/HEADER/UNA/X0001/">
+         <dmlExpression><![CDATA[in:\HEADER\UNA\X0001]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-757483259" elementPath="/HEADER/UNG/D0038/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\HEADER\UNG\D0038, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1768048281" elementPath="/HEADER/UNB/S003/D0007/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\HEADER\UNB\S003\D0007, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="397284350" elementPath="/HEADER/UNB/S003/D0014/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\HEADER\UNB\S003\D0014, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1779952350" elementPath="/MESSAGE/UNH/S017/D0051/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MESSAGE\UNH\S017\D0051, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1200586889" elementPath="/HEADER/UNA/X0002/">
+         <dmlExpression><![CDATA[in:\HEADER\UNA\X0002]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="458597393" elementPath="/HEADER/UNG/S008/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\HEADER\UNG\S008 then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1184670497" elementPath="/MESSAGE/UNH/S018/D0051/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MESSAGE\UNH\S018\D0051, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="601867521" elementPath="/HEADER/UNB/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\HEADER\UNB then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1740823683" elementPath="/MESSAGE/UNH/S016/D0115/">
+         <dmlExpression><![CDATA[in:\MESSAGE\UNH\S016\D0115]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1713977" elementPath="/MESSAGE/UNH/S017/D0122/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\MESSAGE\UNH\S017\D0122, absent )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="564690507" elementPath="/HEADER/UNB/S005/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\HEADER\UNB\S005 then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1594761102" elementPath="/HEADER/UNB/D0026/">
+         <dmlExpression><![CDATA[replaceIfNullOrAbsent ( in:\HEADER\UNB\D0026, absent )]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>
