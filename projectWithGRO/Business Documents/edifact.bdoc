@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <businessDocument xmlns="http://www.axway.com/mappingServices/edifactBusinessDocument" id="59be3287-c11c-43a0-8953-7156aeda4982" encodingBD="iso8859">
    <signature appVersion="3.1.2" lastUpdatedOn="20/10/2016 15:10:42 +0300"/>
-   <tableName>~/Extended Objects/gro/tbl_edifact.tbl</tableName>
+   <tableName>~/Extended Objects/tbl_edifact.tbl</tableName>
    <childElements>
       <childElement factoryType="EdiHeader" order="1" name="HEADER" label="EDI Header" hash="1340697185">
          <cardinality maximum="1"/>
