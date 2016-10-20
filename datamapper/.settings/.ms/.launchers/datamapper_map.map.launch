@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.axway.ms.mb.simulation.ui.MBRemoteSimulationType">
+<stringAttribute key="Connection_Name" value="b2bi"/>
+<booleanAttribute key="Include_Linenumbers" value="true"/>
+<booleanAttribute key="Override" value="false"/>
+<stringAttribute key="Project_Name" value="/datamapper/Maps/datamapper_map.map"/>
+<booleanAttribute key="Recompilation" value="true"/>
+<booleanAttribute key="Store_map_data" value="true"/>
+<booleanAttribute key="Strip_simulation_information" value="false"/>
+<listAttribute key="Test_Files"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/datamapper/Maps/datamapper_map.map"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+</launchConfiguration>
