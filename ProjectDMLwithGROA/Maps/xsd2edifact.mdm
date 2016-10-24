@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <map xmlns="http://www.axway.com/mappingServices/map" id="601e4ac0-6ef0-46b9-b53b-a03b2ea29c73">
-   <signature appVersion="3.1.2" lastUpdatedOn="24/10/2016 15:49:56 +0300"/>
+   <signature appVersion="3.1.2" lastUpdatedOn="24/10/2016 17:37:26 +0300"/>
    <outputBusinessDocument businessDocument="~/Business Documents/edifact.bdoc" alias="out"/>
    <inputBusinessDocuments>
       <inputBusinessDocument businessDocument="~/Business Documents/xsd.bdoc" alias="in"/>
    </inputBusinessDocuments>
    <mapElements>
-      <mapElement elementHash="1948463615" elementPath="/HEADER/UNA/X0006/">
-         <dmlExpression><![CDATA["'"]]></dmlExpression>
+      <mapElement elementHash="-1122718748" elementPath="/HEADER/UNB/S001/">
+         <dmlExpression><![CDATA["/"]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="-70241507" elementPath="/HEADER/UNA/X0005/">
-         <dmlExpression><![CDATA["*"]]></dmlExpression>
+      <mapElement elementHash="-294012274" elementPath="/MESSAGE/UNH/S009/D0065/">
+         <dmlExpression><![CDATA[in:\!tns:GetClientByNDGResponse!\!tns:client!\!tns:ndg!]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1049110251" elementPath="/MESSAGE/UNH/S016/D0115/">
+         <dmlExpression><![CDATA[in:\!tns:GetClientByNDGResponse!\!tns:client!\!tns:lang!]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1223451442" elementPath="/HEADER/UNA/X0004/">
+         <dmlExpression><![CDATA["?"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="818363252" elementPath="/HEADER/UNA/X0003/">
+         <dmlExpression><![CDATA["."]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1397634637" elementPath="/HEADER/UNB/S001/D0002/">
+         <dmlExpression><![CDATA["]"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1340659992" elementPath="/MESSAGE/UNH/S010/D0070/">
          <dmlExpression><![CDATA[in:\!tns:GetClientByNDGResponse!\!tns:client!\!tns:salutation!]]></dmlExpression>
@@ -18,38 +30,35 @@
       <mapElement elementHash="695635279" elementPath="/MESSAGE/UNH/S009/D0054/">
          <dmlExpression><![CDATA[in:\!tns:GetClientByNDGResponse!\!tns:client!\!tns:ndg!]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="1426778364" elementPath="/HEADER/UNA/X0002/">
-         <dmlExpression><![CDATA["+"]]></dmlExpression>
-      </mapElement>
-      <mapElement elementHash="818363252" elementPath="/HEADER/UNA/X0003/">
-         <dmlExpression><![CDATA["."]]></dmlExpression>
-      </mapElement>
       <mapElement elementHash="177457162" elementPath="/MESSAGE/UNH/D0062/">
-         <dmlExpression><![CDATA[in:\!tns:GetClientByNDGResponse!\!tns:client!\!tns:ndg!]]></dmlExpression>
-      </mapElement>
-      <mapElement elementHash="-541235123" elementPath="/MESSAGE/UNH/S017/D0121/">
-         <dmlExpression><![CDATA[in:\!tns:GetClientByNDGResponse!\!tns:client!\!tns:firstName!]]></dmlExpression>
-      </mapElement>
-      <mapElement elementHash="-350500495" elementPath="/MESSAGE/UNH/S009/D0052/">
-         <dmlExpression><![CDATA[in:\!tns:GetClientByNDGResponse!\!tns:client!\!tns:ndg!]]></dmlExpression>
-      </mapElement>
-      <mapElement elementHash="1638617756" elementPath="/MESSAGE/UNH/S018/D0127/">
-         <dmlExpression><![CDATA[in:\!tns:GetClientByNDGResponse!\!tns:client!\!tns:lastName!]]></dmlExpression>
-      </mapElement>
-      <mapElement elementHash="-601972748" elementPath="/MESSAGE/UNH/S009/D0051/">
-         <dmlExpression><![CDATA[in:\!tns:GetClientByNDGResponse!\!tns:client!\!tns:ndg!]]></dmlExpression>
-      </mapElement>
-      <mapElement elementHash="1223451442" elementPath="/HEADER/UNA/X0004/">
-         <dmlExpression><![CDATA["?"]]></dmlExpression>
-      </mapElement>
-      <mapElement elementHash="1049110251" elementPath="/MESSAGE/UNH/S016/D0115/">
-         <dmlExpression><![CDATA[in:\!tns:GetClientByNDGResponse!\!tns:client!\!tns:lang!]]></dmlExpression>
-      </mapElement>
-      <mapElement elementHash="-294012274" elementPath="/MESSAGE/UNH/S009/D0065/">
          <dmlExpression><![CDATA[in:\!tns:GetClientByNDGResponse!\!tns:client!\!tns:ndg!]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1436152708" elementPath="/HEADER/UNA/X0001/">
          <dmlExpression><![CDATA[":"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1638617756" elementPath="/MESSAGE/UNH/S018/D0127/">
+         <dmlExpression><![CDATA[in:\!tns:GetClientByNDGResponse!\!tns:client!\!tns:lastName!]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2116608926" elementPath="/HEADER/UNB/S001/D0001/">
+         <dmlExpression><![CDATA["["]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-70241507" elementPath="/HEADER/UNA/X0005/">
+         <dmlExpression><![CDATA["*"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-601972748" elementPath="/MESSAGE/UNH/S009/D0051/">
+         <dmlExpression><![CDATA[in:\!tns:GetClientByNDGResponse!\!tns:client!\!tns:ndg!]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1948463615" elementPath="/HEADER/UNA/X0006/">
+         <dmlExpression><![CDATA["'"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1426778364" elementPath="/HEADER/UNA/X0002/">
+         <dmlExpression><![CDATA["+"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-350500495" elementPath="/MESSAGE/UNH/S009/D0052/">
+         <dmlExpression><![CDATA[in:\!tns:GetClientByNDGResponse!\!tns:client!\!tns:ndg!]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-541235123" elementPath="/MESSAGE/UNH/S017/D0121/">
+         <dmlExpression><![CDATA[in:\!tns:GetClientByNDGResponse!\!tns:client!\!tns:firstName!]]></dmlExpression>
       </mapElement>
    </mapElements>
 </map>
