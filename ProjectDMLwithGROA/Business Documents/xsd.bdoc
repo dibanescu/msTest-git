@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<businessDocument xmlns="http://www.axway.com/mappingServices/xsdBusinessDocument" id="c3cc2d16-d0d4-4649-adcb-147ba9dacd6d" keepDecimalSeparatorCharacter="true" schema="~/Business Documents/clientinfo.xsd" keepDecimalSeparator="true" keepInputNumberFractionDigits="true" keepIntegerPlusSign="true" encodingBD="utf8" keepInputNumberDateDigits="true" keepPlusSign="true" elementName="GetClientByNDGResponse">
+   <signature appVersion="3.1.2" lastUpdatedOn="24/10/2016 15:45:15 +0300"/>
+   <namespacePairs>
+      <namespacePair xmlPrefix="tns" xmlUri="http://unicredit.eu/xmlns/V1/anagrafe"/>
+      <namespacePair xmlPrefix="xs" xmlUri="http://www.w3.org/2001/XMLSchema"/>
+   </namespacePairs>
+</businessDocument>
