@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<businessDocument xmlns="http://www.axway.com/mappingServices/edifactBusinessDocument" id="e2cf4192-ccb5-42f4-ad04-352923d956d2" encodingBD="iso8859">
+   <signature appVersion="3.1.2" lastUpdatedOn="24/10/2016 12:10:08 +0300"/>
+   <tableName>~/Extended Objects/gro/edifact_table.tbl</tableName>
+   <childElements>
+      <childElement factoryType="EdiHeader" order="1" name="HEADER" label="EDI Header" hash="188178743">
+         <cardinality maximum="1"/>
+         <childElements>
+            <childElement factoryType="EdiSegment" order="2" label="SERVICE STRING ADVICE" name="UNA" hash="-986172864">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="EdiSimpleElement" hash="-896432875" typeId="11" definition="1" allowDistortion="true" label="COMPONENT DATA ELEMENT SEPARATOR" defaultValue=":" order="3" encodingElement="iso8859" name="X0001">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="EdiSimpleElement" hash="445876455" typeId="11" definition="1" allowDistortion="true" label="DATA ELEMENT SEPARATOR" defaultValue="+" order="4" encodingElement="iso8859" name="X0002">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="EdiSimpleElement" hash="376928480" typeId="11" definition="1" allowDistortion="true" label="DECIMAL MARK" defaultValue="." order="5" encodingElement="iso8859" name="X0003">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="EdiSimpleElement" hash="-401797822" typeId="11" definition="1" allowDistortion="true" label="RELEASE MARKER" defaultValue="?" order="6" encodingElement="iso8859" name="X0004">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="EdiSimpleElement" hash="546804789" typeId="11" definition="1" allowDistortion="true" label="REPETITION SEPARATOR" defaultValue="*" order="7" encodingElement="iso8859" name="X0005">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="EdiSimpleElement" hash="-337335808" typeId="11" definition="1" allowDistortion="true" label="SEGMENT TERMINATOR" defaultValue="&apos;" order="8" encodingElement="iso8859" name="X0006">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="EdiSegment" order="9" label="INTERCHANGE HEADER" name="UNB" hash="-886073388">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="EdiCompositeElement" order="10" name="S001" label="SYNTAX IDENTIFIER" hash="425860090">
+                     <cardinality minimum="1" maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="EdiSimpleElement" hash="-1053028586" typeId="11" definition="4" allowDistortion="true" label="Syntax identifier" order="11" encodingElement="iso8859" name="D0001">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="332840620" typeId="11" definition="1" allowDistortion="true" label="Syntax version number" order="12" encodingElement="iso8859" name="D0002">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="-617034736" typeId="11" definition="6" allowDistortion="true" label="Service code list directory version number" nullable="true" order="13" encodingElement="iso8859" name="D0080">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="640681938" typeId="11" definition="3" allowDistortion="true" label="Character encoding, coded" nullable="true" order="14" encodingElement="iso8859" name="D0133">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="EdiCompositeElement" order="15" name="S002" label="INTERCHANGE SENDER" hash="1427674907">
+                     <cardinality minimum="1" maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="EdiSimpleElement" hash="-1432180130" typeId="11" definition="35" allowDistortion="true" label="Interchange sender identification" order="16" encodingElement="iso8859" name="D0004">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="-2073648923" typeId="11" definition="4" allowDistortion="true" label="Identification code qualifier" nullable="true" order="17" encodingElement="iso8859" name="D0007">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="-391652434" typeId="11" definition="35" allowDistortion="true" label="Interchange sender internal identification" nullable="true" order="18" encodingElement="iso8859" name="D0008">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="1863019454" typeId="11" definition="35" allowDistortion="true" label="Interchange sender internal  sub-identification" nullable="true" order="19" encodingElement="iso8859" name="D0042">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="EdiCompositeElement" order="20" name="S003" label="INTERCHANGE RECIPIENT" hash="1208900168">
+                     <cardinality minimum="1" maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="EdiSimpleElement" hash="-2146574448" typeId="11" definition="35" allowDistortion="true" label="Interchange recipient identification" order="21" encodingElement="iso8859" name="D0010">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="-916254502" typeId="11" definition="4" allowDistortion="true" label="Identification code qualifier" nullable="true" order="22" encodingElement="iso8859" name="D0007">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="-1340359010" typeId="11" definition="35" allowDistortion="true" label="Interchange recipient internal identification" nullable="true" order="23" encodingElement="iso8859" name="D0014">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="591493492" typeId="11" definition="35" allowDistortion="true" label="Interchange recipient internal sub-identification" nullable="true" order="24" encodingElement="iso8859" name="D0046">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="EdiCompositeElement" order="25" name="S004" label="DATE AND TIME OF PREPARATION" hash="-1655450467">
+                     <cardinality minimum="1" maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="EdiSimpleElement" hash="-900715041" typeId="11" definition="8" allowDistortion="true" label="Date" order="26" encodingElement="iso8859" name="D0017">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="-845333458" typeId="11" definition="4" allowDistortion="true" label="Time" order="27" encodingElement="iso8859" name="D0019">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="EdiSimpleElement" hash="-1551184752" typeId="11" definition="14" allowDistortion="true" label="INTERCHANGE CONTROL REFERENCE" order="28" encodingElement="iso8859" name="D0020">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="EdiCompositeElement" order="29" name="S005" label="RECIPIENT REFERENCE/PASSWORD DETAILS" hash="1085654809">
+                     <cardinality maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="EdiSimpleElement" hash="604272236" typeId="11" definition="14" allowDistortion="true" label="Recipient reference/password" order="30" encodingElement="iso8859" name="D0022">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="1085589043" typeId="11" definition="2" allowDistortion="true" label="Recipient reference/password qualifier" nullable="true" order="31" encodingElement="iso8859" name="D0025">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="EdiSimpleElement" hash="6350511" typeId="11" definition="14" allowDistortion="true" label="APPLICATION REFERENCE" nullable="true" order="32" encodingElement="iso8859" name="D0026">
+                     <cardinality maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="EdiSimpleElement" hash="692142536" typeId="11" definition="1" allowDistortion="true" label="PROCESSING PRIORITY CODE" nullable="true" order="33" encodingElement="iso8859" name="D0029">
+                     <cardinality maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="EdiSimpleElement" hash="-1807942505" typeId="11" definition="1" allowDistortion="true" label="ACKNOWLEDGEMENT REQUEST" nullable="true" order="34" encodingElement="iso8859" name="D0031">
+                     <cardinality maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="EdiSimpleElement" hash="1047990171" typeId="11" definition="35" allowDistortion="true" label="INTERCHANGE AGREEMENT IDENTIFIER" nullable="true" order="35" encodingElement="iso8859" name="D0032">
+                     <cardinality maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="EdiSimpleElement" hash="-1179086234" typeId="11" definition="1" allowDistortion="true" label="TEST INDICATOR" nullable="true" order="36" encodingElement="iso8859" name="D0035">
+                     <cardinality maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="EdiSegment" order="37" label="GROUP HEADER" name="UNG" hash="1697301796">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="EdiSimpleElement" hash="-1168139030" typeId="11" definition="6" allowDistortion="true" label="MESSAGE GROUP IDENTIFICATION" nullable="true" order="38" encodingElement="iso8859" name="D0038">
+                     <cardinality maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="EdiCompositeElement" order="39" name="S006" label="APPLICATION SENDER IDENTIFICATION" hash="-796463700">
+                     <cardinality maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="EdiSimpleElement" hash="1695115081" typeId="11" definition="35" allowDistortion="true" label="Application sender identification" order="40" encodingElement="iso8859" name="D0040">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="1269844586" typeId="11" definition="4" allowDistortion="true" label="Identification code qualifier" nullable="true" order="41" encodingElement="iso8859" name="D0007">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="EdiCompositeElement" order="42" name="S007" label="APPLICATION RECIPIENT IDENTIFICATION" hash="-1743942323">
+                     <cardinality maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="EdiSimpleElement" hash="1641163340" typeId="11" definition="35" allowDistortion="true" label="Application recipient identification" order="43" encodingElement="iso8859" name="D0044">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="-105266231" typeId="11" definition="4" allowDistortion="true" label="Identification code qualifier" nullable="true" order="44" encodingElement="iso8859" name="D0007">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="EdiCompositeElement" order="45" name="S004" label="DATE AND TIME OF PREPARATION" hash="-13876711">
+                     <cardinality maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="EdiSimpleElement" hash="1556870794" typeId="11" definition="8" allowDistortion="true" label="Date" order="46" encodingElement="iso8859" name="D0017">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="2081498211" typeId="11" definition="4" allowDistortion="true" label="Time" order="47" encodingElement="iso8859" name="D0019">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="EdiSimpleElement" hash="-1297899545" typeId="11" definition="14" allowDistortion="true" label="GROUP REFERENCE NUMBER" order="48" encodingElement="iso8859" name="D0048">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="EdiSimpleElement" hash="-1333732808" typeId="11" definition="3" allowDistortion="true" label="CONTROLLING AGENCY, CODED" nullable="true" order="49" encodingElement="iso8859" name="D0051">
+                     <cardinality maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="EdiCompositeElement" order="50" name="S008" label="MESSAGE VERSION" hash="-1376833337">
+                     <cardinality maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="EdiSimpleElement" hash="-2017244196" typeId="11" definition="3" allowDistortion="true" label="Message version number" order="51" encodingElement="iso8859" name="D0052">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="1487959612" typeId="11" definition="3" allowDistortion="true" label="Message release number" order="52" encodingElement="iso8859" name="D0054">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="920757690" typeId="11" definition="6" allowDistortion="true" label="Association assigned code" nullable="true" order="53" encodingElement="iso8859" name="D0057">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="EdiSimpleElement" hash="1980924820" typeId="11" definition="14" allowDistortion="true" label="APPLICATION PASSWORD" nullable="true" order="54" encodingElement="iso8859" name="D0058">
+                     <cardinality maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="EdiMessage" order="55" name="MESSAGE" label="EDI Message" hash="-385637900">
+         <cardinality minimum="1" maximum="1"/>
+         <childElements>
+            <childElement factoryType="EdiSegment" order="56" label="MESSAGE HEADER" name="UNH" hash="703833713">
+               <cardinality minimum="1" maximum="1"/>
+               <childElements>
+                  <childElement factoryType="EdiSimpleElement" hash="-632182485" typeId="11" definition="14" allowDistortion="true" label="MESSAGE REFERENCE NUMBER" order="57" encodingElement="iso8859" name="D0062">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="EdiCompositeElement" order="58" name="S009" label="MESSAGE IDENTIFIER" hash="1318891671">
+                     <cardinality minimum="1" maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="EdiSimpleElement" hash="1780605840" typeId="11" definition="6" allowDistortion="true" label="Message type" order="59" encodingElement="iso8859" name="D0065">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="-340200525" typeId="11" definition="3" allowDistortion="true" label="Message version number" order="60" encodingElement="iso8859" name="D0052">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="300671238" typeId="11" definition="3" allowDistortion="true" label="Message release number" order="61" encodingElement="iso8859" name="D0054">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="1876724201" typeId="11" definition="3" allowDistortion="true" label="Controlling agency, coded" order="62" encodingElement="iso8859" name="D0051">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="-1536889258" typeId="11" definition="6" allowDistortion="true" label="Association assigned code" nullable="true" order="63" encodingElement="iso8859" name="D0057">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="1521490928" typeId="11" definition="6" allowDistortion="true" label="Code list directory version number" nullable="true" order="64" encodingElement="iso8859" name="D0110">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="1979415105" typeId="11" definition="6" allowDistortion="true" label="Message type sub-function identification" nullable="true" order="65" encodingElement="iso8859" name="D0113">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="EdiSimpleElement" hash="-394456188" typeId="11" definition="35" allowDistortion="true" label="COMMON ACCESS REFERENCE" nullable="true" order="66" encodingElement="iso8859" name="D0068">
+                     <cardinality maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="EdiCompositeElement" order="67" name="S010" label="STATUS OF THE TRANSFER" hash="1245674010">
+                     <cardinality maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="EdiSimpleElement" hash="2055580695" typeId="11" definition="2" allowDistortion="true" label="Sequence of transfers" order="68" encodingElement="iso8859" name="D0070">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="1710216155" typeId="11" definition="1" allowDistortion="true" label="First and last transfer" nullable="true" order="69" encodingElement="iso8859" name="D0073">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="EdiCompositeElement" order="70" name="S016" label="MESSAGE SUBSET IDENTIFICATION" hash="-1094245065">
+                     <cardinality maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="EdiSimpleElement" hash="-1622206689" typeId="11" definition="14" allowDistortion="true" label="Message subset identification" order="71" encodingElement="iso8859" name="D0115">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="-100837260" typeId="11" definition="3" allowDistortion="true" label="Message subset version number" nullable="true" order="72" encodingElement="iso8859" name="D0116">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="440731287" typeId="11" definition="3" allowDistortion="true" label="Message subset release number" nullable="true" order="73" encodingElement="iso8859" name="D0118">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="-1508667174" typeId="11" definition="3" allowDistortion="true" label="Controlling agency, coded IDENTIFICATION" nullable="true" order="74" encodingElement="iso8859" name="D0051">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="EdiCompositeElement" order="75" name="S017" label="MESSAGE IMPLEMENTATION GUIDELINE" hash="1751318976">
+                     <cardinality maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="EdiSimpleElement" hash="1062430726" typeId="11" definition="14" allowDistortion="true" label="Message implementation guideline identification" order="76" encodingElement="iso8859" name="D0121">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="-1024520270" typeId="11" definition="3" allowDistortion="true" label="Message implementation guideline version number" nullable="true" order="77" encodingElement="iso8859" name="D0122">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="-1416662919" typeId="11" definition="3" allowDistortion="true" label="Message implementation guideline release number" nullable="true" order="78" encodingElement="iso8859" name="D0124">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="1742542234" typeId="11" definition="3" allowDistortion="true" label="Controlling agency, coded" nullable="true" order="79" encodingElement="iso8859" name="D0051">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="EdiCompositeElement" order="80" name="S018" label="SCENARIO IDENTIFICATION" hash="-967693488">
+                     <cardinality maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="EdiSimpleElement" hash="2053899691" typeId="11" definition="14" allowDistortion="true" label="Scenario identification" order="81" encodingElement="iso8859" name="D0127">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="-880649938" typeId="11" definition="3" allowDistortion="true" label="Scenario version number" nullable="true" order="82" encodingElement="iso8859" name="D0128">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="98036646" typeId="11" definition="3" allowDistortion="true" label="Scenario release number" nullable="true" order="83" encodingElement="iso8859" name="D0130">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="EdiSimpleElement" hash="-1876372388" typeId="11" definition="3" allowDistortion="true" label="Controlling agency, coded" nullable="true" order="84" encodingElement="iso8859" name="D0051">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+               </childElements>
+            </childElement>
+         </childElements>
+      </childElement>
+   </childElements>
+</businessDocument>
