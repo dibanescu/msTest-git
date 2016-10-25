@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <map xmlns="http://www.axway.com/mappingServices/map" id="0ba07094-0b6d-4781-9426-e89970532bf7">
-<<<<<<< HEAD
-   <signature appVersion="3.1.2" lastUpdatedOn="25/10/2016 17:25:57 +0300"/>
-=======
-   <signature appVersion="3.1.2" lastUpdatedOn="25/10/2016 17:25:00 +0300"/>
->>>>>>> branch 'master' of https://github.com/dibanescu/msTest-git.git
+   <signature appVersion="3.1.2" lastUpdatedOn="25/10/2016 17:39:08 +0300"/>
    <outputBusinessDocument businessDocument="~/Business Documents/xml_bdoc.bdoc" alias="out"/>
    <inputBusinessDocuments>
       <inputBusinessDocument businessDocument="~/Business Documents/flatFile_bdoc.bdoc" alias="in"/>
@@ -26,7 +22,7 @@
          <dmlExpression><![CDATA["ana"]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-753929250" elementPath="/Root/Leaf12/">
-         <dmlExpression><![CDATA[in:\Root\Leaf5]]></dmlExpression>
+         <dmlExpression><![CDATA[in:\Root\Leaf7]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-2072130616" elementPath="/Prolog/XmlVersion/">
          <dmlExpression><![CDATA["1.0"]]></dmlExpression>
