@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <map xmlns="http://www.axway.com/mappingServices/map" id="0ba07094-0b6d-4781-9426-e89970532bf7">
-   <signature appVersion="3.1.2" lastUpdatedOn="25/10/2016 18:05:56 +0300"/>
+
+   <signature appVersion="3.1.2" lastUpdatedOn="25/10/2016 17:57:04 +0300"/>
+>>>>>>> branch 'master' of https://github.com/dibanescu/msTest-git.git
    <outputBusinessDocument businessDocument="~/Business Documents/xml_bdoc.bdoc" alias="out"/>
    <inputBusinessDocuments>
       <inputBusinessDocument businessDocument="~/Business Documents/flatFile_bdoc.bdoc" alias="in"/>
    </inputBusinessDocuments>
    <mapElements>
       <mapElement elementHash="39242275" elementPath="/Root/Leaf14/">
-         <dmlExpression><![CDATA[in:\Root\Leaf5]]></dmlExpression>
+
       </mapElement>
       <mapElement elementHash="669054124" elementPath="/Root/Leaf10/">
          <dmlExpression><![CDATA[in:\Root\Leaf3]]></dmlExpression>
@@ -15,11 +17,14 @@
       <mapElement elementHash="-1829486900" elementPath="/Prolog/XmlEncoding/">
          <dmlExpression><![CDATA["ISO-8859-1"]]></dmlExpression>
       </mapElement>
+      <mapElement elementHash="-635660391" elementPath="/Root/Leaf9/">
+         <dmlExpression><![CDATA[in:\Root\Leaf2]]></dmlExpression>
+      </mapElement>
       <mapElement elementHash="-410845788" elementPath="/Root/Leaf11/">
          <dmlExpression><![CDATA[in:\Root\Leaf4]]></dmlExpression>
       </mapElement>
-      <mapElement elementHash="-635660391" elementPath="/Root/Leaf9/">
-         <dmlExpression><![CDATA[in:\Root\Leaf2]]></dmlExpression>
+      <mapElement elementHash="631824462" elementPath="/Root/Leaf13/">
+         <dmlExpression><![CDATA[in:\Root\Leaf5]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="631824462" elementPath="/Root/Leaf13/">
          <dmlExpression><![CDATA[in:\Root\Leaf5]]></dmlExpression>
