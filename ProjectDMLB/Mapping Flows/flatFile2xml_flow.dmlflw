@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <flow xmlns="http://www.axway.com/mappingServices/flow" id="51b552af-ea96-4b84-b78f-05216932257b">
-   <signature appVersion="3.1.2" lastUpdatedOn="20/10/2016 16:31:55 +0300"/>
+   <signature appVersion="3.1.2" lastUpdatedOn="25/10/2016 17:24:07 +0300"/>
    <configurationParameters>
       <configurationParameter name="checkInputFacet" value="true"/>
       <configurationParameter name="stopOnFirstInputFacetCheckError" value="true"/>
@@ -35,25 +35,25 @@
    </graphLinks>
    <graphNodes>
       <graphNode factoryType="InputEntity" name="Input" hash="21d1b8f4-30ab-49de-8e28-a5058e832ae0">
-         <bounds height="40" width="90" y="30"/>
+         <bounds height="50" width="112" y="30"/>
       </graphNode>
       <graphNode factoryType="OutputEntity" name="out1" hash="bfc681f6-b6f1-49d2-a1e0-3402cd3aaf34">
-         <bounds x="510" height="40" width="90" y="65"/>
+         <bounds x="580" height="50" width="112" y="65"/>
       </graphNode>
       <graphNode factoryType="GraphicalInstructionBlock" name="Main_Block_flatFile2xml_flow1" nameDisplayed="true" hash="59a57106-a0a3-4ac5-aa7b-a1d69815ad7a">
-         <bounds x="271" height="100" width="142" y="90"/>
+         <bounds x="271" height="110" width="171" y="90"/>
          <intructions>
             <instruction factoryType="GraphicalInstructionMap" name="flatFile2xml" nameDisplayed="true" mapName="~/Maps/flatFile2xml.mdm" hash="2765bbab-ffba-45a4-931d-44eed8c53bd3">
-               <bounds x="24" height="40" width="90" y="20"/>
+               <bounds x="24" height="50" width="112" y="20"/>
             </instruction>
          </intructions>
       </graphNode>
       <graphNode factoryType="GraphicalBusinessDocumentEntity" name="flatFile_bdoc" hash="db2467ab-02b6-4930-b4c6-b27ac479abd7">
-         <bounds x="131" height="40" width="90" y="140"/>
+         <bounds x="131" height="50" width="112" y="140"/>
          <documentName>~/Business Documents/flatFile_bdoc.bdoc</documentName>
       </graphNode>
       <graphNode factoryType="GraphicalBusinessDocumentEntity" name="xml_bdoc" hash="e6815ba0-d0c8-4ac3-89b9-5b0821d352fa">
-         <bounds x="463" height="40" width="90" y="110"/>
+         <bounds x="463" height="50" width="112" y="110"/>
          <documentName>~/Business Documents/xml_bdoc.bdoc</documentName>
       </graphNode>
    </graphNodes>
