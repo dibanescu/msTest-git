@@ -1,0 +1,33 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://unicredit.eu/xmlns/V1/anagrafe" xmlns:tns="http://unicredit.eu/xmlns/V1/anagrafe" >
+	<xs:element name="GetClientByNDGRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ndg" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GetClientByNDGResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="client" type="tns:Client"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="Client">
+		<xs:sequence>
+			<xs:element name="ndg" type="xs:string"/>
+			<xs:element name="salutation" type="xs:string"/>
+			<xs:element name="lang" type="xs:string"/>
+			<xs:element name="firstName" type="xs:string"/>
+			<xs:element name="lastName" type="xs:string"/>
+			<xs:element name="birthDate" type="xs:date"/>
+			<xs:element name="preferedCategories">
+				<xs:complexType>
+					<xs:sequence maxOccurs="unbounded" minOccurs="0">
+						<xs:element name="category" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
